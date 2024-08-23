@@ -87,17 +87,17 @@ function searchGame(){
             const htmlItem = `<div class="g-card">
                     <div class="pic">
                     <figure class="ratio ratio-1">
-                        <a rel="noindex nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
+                        <a rel="nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
                         <img src="https://tbg95.co/${item.slug}/logo.png" class="small-thumb" alt="${item.title}">
                         </a>
                     </figure>
                     </div>
                     <div class="g-info">
                     <h3 class="grid-title ellipsis">
-                        <a title="${item.title}" rel="noindex nofollow">${item.title}</a>
+                        <a title="${item.title}" rel="nofollow">${item.title}</a>
                     </h3>
         
-                    <a class="bt-play" rel="noindex nofollow" title="${item.title}">
+                    <a class="bt-play" rel="nofollow" title="${item.title}">
                         <img src="/images/play.svg" alt="Play game">
                     </a>
                     </div>
@@ -110,24 +110,3 @@ function searchGame(){
     }
     
 }
-
-function loadGA(){
-    var  r = document.createElement("script");
-	r.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-RZ2JYMQPM2"), r.setAttribute("type", "text/javascript"), r.setAttribute("crossOrigin", "anonymous"),  r.onload = function (){
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-RZ2JYMQPM2', {
-            'cookie_flags': 'SameSite=None;Secure'
-          });
-        var ads = document.createElement('script');
-        ads.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889675448259925"), ads.setAttribute("type", "text/javascript"), ads.setAttribute("crossOrigin", "anonymous"), ads.onload = function(){
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        },document.head.appendChild(ads);
-    },document.head.appendChild(r);
-}
-window.addEventListener('load', function() {
-    loadGA();
-});

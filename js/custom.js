@@ -113,17 +113,17 @@ function searchGame(){
             const htmlItem = `<div class="g-card">
                     <div class="pic">
                     <figure class="ratio ratio-1">
-                        <a rel="noindex nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
+                        <a rel="nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
                         <img src="https://tbg95.co/${item.slug}/logo.png" class="small-thumb" alt="${item.title}">
                         </a>
                     </figure>
                     </div>
                     <div class="g-info">
                     <h3 class="grid-title ellipsis">
-                        <a title="${item.title}" rel="noindex nofollow">${item.title}</a>
+                        <a title="${item.title}" rel="nofollow">${item.title}</a>
                     </h3>
         
-                    <a class="bt-play" rel="noindex nofollow" title="${item.title}">
+                    <a class="bt-play" rel="nofollow" title="${item.title}">
                         <img src="/images/play.svg" alt="Play game">
                     </a>
                     </div>
@@ -150,7 +150,7 @@ function loadSimilar(){
             if(item.img){
                 img = item.img;
             }
-            const htmlItem = `<a rel="noindex nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
+            const htmlItem = `<a rel="nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
                         <div class="pic">
                             <figure class="ratio ratio-1 circle list-thumbnail">
                             <img src="/images/logo/${img}.png" class="small-thumb" alt="${item.title}">
@@ -189,7 +189,7 @@ function loadHot(){
             if(slug.indexOf("fnaf2") != -1 && listGame[j].domain == 4){
                 slug = listGame[j].slug_tmp;
             } 
-            const htmlItem = `<a rel="noindex nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
+            const htmlItem = `<a rel="nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
                         <div class="pic">
                             <figure class="ratio ratio-1 circle list-thumbnail">
                             <img src="/images/logo/${img}.png" class="small-thumb" alt="${item.title}">
@@ -308,21 +308,21 @@ function loadCategory(cat){
             const htmlItem = `<div class="g-card">
                     <div class="pic">
                     <figure class="ratio ratio-1">
-                        <a rel="noindex nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
+                        <a rel="nofollow" title="${item.title}" onclick="showGame('${item.slug}')">
                         <img src="/images/logo/${img}.png" class="small-thumb" alt="${item.title}">
                         </a>
                     </figure>
                     </div>
                     <div class="g-info">
                     <h3 class="grid-title ellipsis">
-                        <a rel="noindex nofollow" title="${item.title}">${item.title}</a>
+                        <a rel="nofollow" title="${item.title}">${item.title}</a>
                     </h3>
                     <div class="info">
                         <div class="rating ellipsis">
                             ${item.cat}
                         </div>
                     </div>
-                    <a class="bt-play" title="${item.title}" rel="noindex nofollow" onclick="showGame('${item.slug}')">
+                    <a class="bt-play" title="${item.title}" rel="nofollow" onclick="showGame('${item.slug}')">
                         <img src="/images/play.svg" alt="Play game">
                     </a>
                     </div>
