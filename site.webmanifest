@@ -1,6 +1,6 @@
 {
-  "name": "Eggy Car Online",
-  "short_name": "EggyCar",
+  "name": "Eggy Car",
+  "short_name": "Eggy Car",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
