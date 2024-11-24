@@ -515,14 +515,16 @@ h4.widget-title {
     overflow: hidden;
     width: 100%;
     background: #212529;
-    border-radius: 10px
 }
 
 .game-iframe {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0
+    right: 0;
+    -webkit-box-shadow: inset 0px 5px 20px 3px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 5px 20px 3px rgba(0,0,0,1);
+    box-shadow: inset 0px 5px 20px 3px rgba(0,0,0,1);
 }
 
 .nav-item {
@@ -656,8 +658,9 @@ input.search {
 }
 
 .skip_play, .skip_screen img {
-    border-radius: 10px;
-    margin: 0 auto
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 150px;
 }
 
 .dropdown-icon {
